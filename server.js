@@ -3,12 +3,14 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
+const errorhandler = require('errorhandler');
 
 const PORT = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
 app.use(cors());
 app.use(morgan('dev'));
+app.use(errorhandler());
 
 // ROUTER
 const apiRouter = require('./api/api');
