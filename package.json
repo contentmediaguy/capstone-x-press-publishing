@@ -14,6 +14,7 @@
     "cors": "^2.8.5",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
+    "minimist": "^1.2.5",
     "mocha": "^3.5.0",
     "morgan": "^1.10.0",
     "random-flat-colors": "^1.0.4",
